@@ -6,7 +6,7 @@
 
     <title></title>
     <link rel="stylesheet" href="dist/reveal.css" />
-    <link rel="stylesheet" href="dist/theme/white.css" id="theme" />
+    <link rel="stylesheet" href="dist/theme/black.css" id="theme" />
     <link rel="stylesheet" href="plugin/highlight/monokai.css" />
 	<link rel="stylesheet" href="css/layout.css" />
 	<link rel="stylesheet" href="plugin/customcontrols/style.css">
@@ -131,6 +131,9 @@
 <div class="" style="position: absolute; left: 0px; top: 0px; height: 700px; width: 960px; min-height: 700px; display: flex; flex-direction: column; align-items: center; justify-content: center" absolute="true">
 
 ### Como Funciona o Cálculo
+
+- Referência Nacional de Produtividade
+- Cálculo da Lotação Mínima
 </div></script></section><section  data-markdown><script type="text/template"><!-- .slide: class="drop" -->
 <div class="" style="position: absolute; left: 0px; top: 0px; height: 700px; width: 960px; min-height: 700px; display: flex; flex-direction: column; align-items: center; justify-content: center" absolute="true">
 
@@ -142,9 +145,11 @@ Usamos a produtividade das turmas recursais mais eficientes do país (os 35% mai
 <div class="" style="position: absolute; left: 0px; top: 0px; height: 700px; width: 960px; min-height: 700px; display: flex; flex-direction: column; align-items: center; justify-content: center" absolute="true">
 
 ### Como Funciona o Cálculo
+
 #### Cálculo da Lotação Mínima (LM)
 
 - Para as TRs com produtividade abaixo de P65, calculamos o número necessário de servidores usando a referência P65 e a média de processos recebidos pela Turma:   
+
 `$LM = Demanda Média / P65 $`
 </div></script></section><section  data-markdown><script type="text/template"><!-- .slide: class="drop" -->
 <div class="" style="position: absolute; left: 0px; top: 0px; height: 700px; width: 960px; min-height: 700px; display: flex; flex-direction: column; align-items: center; justify-content: center" absolute="true">
@@ -287,7 +292,7 @@ Comparamos a **Lotação Mínima (LM)** com a **Lotação Atual (LA):**
       // options from URL query string
       var queryOptions = Reveal().getQueryHash() || {};
 
-      var options = extend(defaultOptions, {"width":960,"height":700,"margin":0.04,"controls":true,"progress":true,"slideNumber":true,"overview":"true","transition":"fade","transitionSpeed":"default"}, queryOptions);
+      var options = extend(defaultOptions, {"width":960,"height":700,"margin":0.04,"maxScale":"1","controls":true,"progress":true,"slideNumber":true,"overview":"true","transition":"fade","transitionSpeed":"default"}, queryOptions);
     </script>
 
     <script>
